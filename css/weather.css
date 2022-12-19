@@ -1,0 +1,56 @@
+.weather {
+
+}
+.weather__header {
+    padding: 2em 2em 0;
+}
+.weather__city {
+    background: transparent;
+    border: none;
+    padding: .5em;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .15);
+}
+.weather__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+}
+.weather__icon {
+    font-size: 6em;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.weather__description {
+    margin: 0;
+}
+.weather__temp {
+    margin: 0;
+    font-size: 4em;
+}
+.weather__temp::after {
+    content: "°";
+    margin-left: 15px;
+}
+.weather__extra {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+.weather__wind {
+    
+}
+.weather__precipitation {
+    
+}
+.weather__week {
+    display: flex;
+    gap: 1em;
+    overflow-x: auto;
+    padding: 0 20px 10px;
+    margin-top: 2em;
+}
+.weather__week::-webkit-scrollbar {
+    height: 8px;
+}

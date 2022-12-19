@@ -1,0 +1,88 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title>Weather Api</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="icofont/icofont.min.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/weather.css">
+  <link rel="stylesheet" href="css/day.css">
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+
+  <!-- Add your site or application content here -->
+   <main class="weather">
+    <div class="weather__header">
+      <i class="icofont-location-pin"></i>
+      <select name="weather_city" class="weather__city">
+        <!-- <option value="38.7072,-9.1355">Lisbon</option> -->
+      </select>
+    </div>
+    <div class="weather__info">
+      <div class="weather__icon">
+        <i class="icofont-cloudy"></i>
+      </div>
+      <p class="weather__description">Cloudy</p>
+      <p class="weather__temp">28</p>
+      <div class="weather__extra">
+        <p class="weather__wind">
+          <i class="icofont-wind"></i>
+          <span>8</span> km/h
+        </p>
+        <p class="weather__precipitation">
+          <i class="icofont-water-drop"></i>
+          <span>47</span>%
+        </p>
+      </div>
+    </div>
+    <div class="weather__week">
+      <!-- repeat for each weekday-->
+      <!--
+      <div class="day">
+        <p class="day__date">Today, 18 Sep</p>
+        <div class="day__info">
+          <span class="day__time">9:00 AM</span>
+          <span class="day__icon">
+            <i class="icofont-cloudy"></i>
+          </span>
+          <span class="day__temp">28</span>
+        </div>
+      </div>
+      -->
+    </div>
+  </main>
+
+
+
+
+
+  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async></script>
+</body>
+
+</html>
